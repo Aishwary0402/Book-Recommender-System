@@ -1,19 +1,22 @@
 Book Recommender System 📚
+
 This project is a book recommendation system developed in a Jupyter Notebook. It uses a dataset from the Book-Crossing community to suggest books to users. The system implements two primary recommendation strategies: a popularity-based model and a collaborative filtering model.
 
 📖 Project Overview
+
 The main objective of this project is to build a system that can recommend books to users. It starts with raw data from three separate files (books.csv, users.csv, ratings.csv), processes and cleans this data, and then builds two different types of recommendation engines.
 
 Key Features:
-Data Preprocessing & Cleaning: The notebook includes steps for cleaning the data, handling missing values, and ensuring data consistency.
 
-Popularity-Based Filtering: A simple yet effective model that suggests books based on their overall popularity. It identifies the top-rated books that have been reviewed by a significant number of users.
+Data Preprocessing & Cleaning: The notebook includes steps for cleaning the data, handling missing values, and ensuring data consistency.
+Popularity-Based Filtering: A simple yet effective model that suggests books based on their overall popularity. It identifies the top-rated books that a significant number of users has reviewed.
 
 Collaborative Filtering: A more personalized model that recommends books by finding similarities between them based on user ratings. It uses the cosine similarity metric to identify books that are often rated similarly by different users.
 
 Model Persistence: The final processed dataframes and the similarity matrix are saved using pickle for easy use in a web application or other deployments.
 
 ⚙️ How It Works
+
 The project is broken down into two main parts:
 
 1. Popularity-Based Recommender
